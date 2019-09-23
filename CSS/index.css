@@ -1,3 +1,202 @@
-.main-content {
-  background-color: red;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+body {
+  line-height: 1.5;
+  color: #333;
+  box-sizing: border-box;
+}
+* {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.bottom-line-h {
+  height: 2px;
+  width: 5rem;
+  background: #17f1ce;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+#section-a h2 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+#section-a .bottom-line {
+  height: 2px;
+  width: 10rem;
+  background: red;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+#section-a .members {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#section-a .members .member {
+  width: 30%;
+  margin-bottom: 1.4rem;
+}
+#section-a .members .member h2 {
+  font-size: 2rem;
+  font-family: 'Noto Serif', serif;
+  text-align: center;
+}
+#section-a .members .member p {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-right: 1.5rem;
+  font-weight: bold;
+}
+#section-a .members .member .team-image {
+  width: 50%;
+  margin: auto;
+}
+#section-a .members .member .team-image img {
+  border-radius: 50%;
+  border: 3px #17f1ce solid;
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFcWbQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
