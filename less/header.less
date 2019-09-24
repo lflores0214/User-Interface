@@ -1,0 +1,36 @@
+header {
+  .displayflex(column);
+
+  nav {
+    width: 65vw;
+    .displayflex(row, space-between, center);
+    margin: 1vh 0vh 2vh 0;
+    font-size: 1.6rem;
+    margin-top:2vh;
+
+    a {
+      text-decoration: none;
+      color: black;
+      border-radius: 10px;
+      width: 70px;
+      height: 20px;
+      text-align: center;
+    }
+    a:hover {
+      color:@mint;
+    }
+  }
+
+  div{
+      margin-top:2vh;
+      border-bottom:1px solid black;
+  }
+}
+header:hover{
+    background-color:rgba(255,255,255,.6);
+    color:black;
+
+    a{
+        color:@teal;
+    }
+}
