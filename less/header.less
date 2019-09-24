@@ -2,35 +2,53 @@ header {
   .displayflex(column);
 
   nav {
-    width: 65vw;
+    width: 20vw;
     .displayflex(row, space-between, center);
     margin: 1vh 0vh 2vh 0;
     font-size: 1.6rem;
     margin-top:2vh;
+    border-bottom: 2px solid white;
+    font-family: "Noto", serif;
+    font-size:1.8rem;
+
+    @media @phone{
+        .displayflex(column);
+        font-size: 1.6rem;
+        width: 70vw;
+        
+    }
 
     a {
       text-decoration: none;
-      color: black;
-      border-radius: 10px;
-      width: 70px;
-      height: 20px;
+      color: white;
       text-align: center;
+
+      @media @phone{
+          border-bottom: 1px solid black;
+          margin-bottom:1.5vh;
+          font-size: 2rem;
+      }
     }
     a:hover {
-      color:@mint;
+      color:@red;
     }
-  }
 
-  div{
-      margin-top:2vh;
-      border-bottom:1px solid black;
   }
 }
 header:hover{
-    background-color:rgba(255,255,255,.6);
+    background-color:rgba(123, 121, 121, 0.3);
     color:black;
-
+    nav{
+      border-color:@mint;
     a{
-        color:@teal;
+        color:white;
+  
+        @media @phone{
+            color:black;
+        }
     }
+    a:hover{
+      color:@mint;
+    }
+}
 }
