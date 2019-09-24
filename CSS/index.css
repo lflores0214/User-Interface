@@ -12,6 +12,7 @@
   align-items: center;
   width: 80vw;
   margin-bottom: 2vh;
+  text-align: center;
 }
 .ctext {
   background-color: rgba(255, 255, 255, 0.8);
@@ -25,16 +26,30 @@
   font-size: 2.4rem;
   text-align: center;
   padding-top: 2vh;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   border-bottom: 3px solid #17f1ce;
   width: 10vw;
   margin-left: 20vw;
 }
 .cptext {
   font-size: 1.8rem;
-  text-align: justify;
+  text-align: center;
   padding: 2%;
   line-height: 1.5;
+  margin-bottom: 2vh;
+}
+.btnstyle {
+  background-color: #17f1ce;
+  color: black;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1% 2% 1% 2%;
+  text-decoration: none;
+  margin-top: 2vh;
+  margin-right: 4%;
 }
 .phonewidth {
   width: 100vw;
@@ -349,6 +364,7 @@ body .campaigns .campaign1 {
   align-items: center;
   width: 80vw;
   margin-bottom: 2vh;
+  text-align: center;
 }
 body .campaigns .campaign1 .c1img img {
   border-radius: 10px;
@@ -369,16 +385,30 @@ body .campaigns .campaign1 .c1text h3 {
   font-size: 2.4rem;
   text-align: center;
   padding-top: 2vh;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   border-bottom: 3px solid #17f1ce;
   width: 10vw;
   margin-left: 20vw;
 }
 body .campaigns .campaign1 .c1text p {
   font-size: 1.8rem;
-  text-align: justify;
+  text-align: center;
   padding: 2%;
   line-height: 1.5;
+  margin-bottom: 2vh;
+}
+body .campaigns .campaign1 .c1text a {
+  background-color: #17f1ce;
+  color: black;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1% 2% 1% 2%;
+  text-decoration: none;
+  margin-top: 2vh;
+  margin-right: 4%;
 }
 body .campaigns .campaign2 {
   display: flex;
@@ -387,6 +417,7 @@ body .campaigns .campaign2 {
   align-items: center;
   width: 80vw;
   margin-bottom: 2vh;
+  text-align: center;
 }
 body .campaigns .campaign2 .c2img img {
   border-radius: 10px;
@@ -407,16 +438,32 @@ body .campaigns .campaign2 .c2text h3 {
   font-size: 2.4rem;
   text-align: center;
   padding-top: 2vh;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   border-bottom: 3px solid #17f1ce;
   width: 10vw;
   margin-left: 20vw;
 }
 body .campaigns .campaign2 .c2text p {
   font-size: 1.8rem;
-  text-align: justify;
+  text-align: center;
   padding: 2%;
   line-height: 1.5;
+  margin-bottom: 2vh;
+}
+body .campaigns .campaign2 .c2text a {
+  background-color: #17f1ce;
+  color: black;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1% 2% 1% 2%;
+  text-decoration: none;
+  margin-top: 2vh;
+  margin-right: 4%;
+  margin-right: 0;
+  margin-left: 4%;
 }
 body .campaigns .campaign3 {
   display: flex;
@@ -425,6 +472,7 @@ body .campaigns .campaign3 {
   align-items: center;
   width: 80vw;
   margin-bottom: 2vh;
+  text-align: center;
 }
 body .campaigns .campaign3 .c3img img {
   border-radius: 10px;
@@ -445,14 +493,28 @@ body .campaigns .campaign3 .c3text h3 {
   font-size: 2.4rem;
   text-align: center;
   padding-top: 2vh;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   border-bottom: 3px solid #17f1ce;
   width: 10vw;
   margin-left: 20vw;
 }
 body .campaigns .campaign3 .c3text p {
   font-size: 1.8rem;
-  text-align: justify;
+  text-align: center;
   padding: 2%;
   line-height: 1.5;
+  margin-bottom: 2vh;
+}
+body .campaigns .campaign3 .c3text a {
+  background-color: #17f1ce;
+  color: black;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1% 2% 1% 2%;
+  text-decoration: none;
+  margin-top: 2vh;
+  margin-right: 4%;
 }

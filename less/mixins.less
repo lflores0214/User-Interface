@@ -1,57 +1,73 @@
-.displayflex(@direction:row, @justify:center, @align:center){
-    display: flex;
-    flex-direction: @direction;
-    justify-content: @justify;
-    align-items: @align;
+.displayflex(@direction:row, @justify:center, @align:center) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
 }
 
-.btnmixin(@backgroundcolor, @color, @width, @height){
-    background-color:@backgroundcolor; 
-    color: @white;
-    width:@width;
-    height: @height;
-    border: 1px solid @button-bg;
-    border-radius:10px;
+.btnmixin(@backgroundcolor, @color, @width, @height) {
+  background-color: @backgroundcolor;
+  color: @white;
+  width: @width;
+  height: @height;
+  border: 1px solid @button-bg;
+  border-radius: 10px;
 }
-.img{
-    border-radius:10px;
-          width:70vw;
-          height:35vh;
-          -webkit-box-shadow: 0 0 10px black;
-        box-shadow: 0 0 10px black;
+.img {
+  border-radius: 10px;
+  width: 70vw;
+  height: 35vh;
+  -webkit-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
 }
-.campaignstyle{
-    .displayflex(row, space-between, center);
-      width: 80vw;
-      margin-bottom:2vh;
+.campaignstyle {
+  .displayflex(row, space-between, center);
+  width: 80vw;
+  margin-bottom: 2vh;
+  text-align: center;
 }
-.ctext{
-    background-color:rgba(255, 255, 255, 0.8);
-        border-radius: 10px;
-        margin-left:2vw;
-        height:35vh;
-        -webkit-box-shadow: 0 0 10px black;
-        box-shadow: 0 0 10px black;
-}
-
-.h3text{
-    font-size: 2.4rem;
-          text-align:center;
-          padding-top:2vh;
-          margin-bottom:5vh;
-          border-bottom: 3px solid @teal;
-          width:10vw;
-          margin-left:20vw;
+.ctext {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-left: 2vw;
+  height: 35vh;
+  -webkit-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
 }
 
-.cptext{
-    font-size:1.8rem;
-    text-align:justify;
-    padding:2%;
-    line-height: 1.5;
-}
-.phonewidth{
-    width: 100vw;
-    padding: 0 5vw 0 5vw;
+.h3text {
+  font-size: 2.4rem;
+  text-align: center;
+  padding-top: 2vh;
+  margin-bottom: 2vh;
+  border-bottom: 3px solid @teal;
+  width: 10vw;
+  margin-left: 20vw;
 }
 
+.cptext {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2%;
+  line-height: 1.5;
+  margin-bottom: 2vh;
+}
+
+.btnstyle {
+  border-radius: 10px;
+  background-color: @teal;
+  color: black;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1% 2% 1% 2%;
+  text-decoration: none;
+  margin-top: 2vh;
+  margin-right: 4%;
+}
+.phonewidth {
+  width: 100vw;
+  padding: 0 5vw 0 5vw;
+}

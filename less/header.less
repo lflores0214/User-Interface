@@ -6,16 +6,15 @@ header {
     .displayflex(row, space-between, center);
     margin: 1vh 0vh 2vh 0;
     font-size: 1.6rem;
-    margin-top:2vh;
+    margin-top: 2vh;
     border-bottom: 2px solid white;
     font-family: "Noto", serif;
-    font-size:1.8rem;
+    font-size: 1.8rem;
 
-    @media @phone{
-        .displayflex(column);
-        font-size: 1.6rem;
-        width: 70vw;
-        
+    @media @phone {
+      .displayflex(column);
+      font-size: 1.6rem;
+      width: 70vw;
     }
 
     a {
@@ -23,32 +22,31 @@ header {
       color: white;
       text-align: center;
 
-      @media @phone{
-          border-bottom: 1px solid black;
-          margin-bottom:1.5vh;
-          font-size: 2rem;
+      @media @phone {
+        border-bottom: 1px solid black;
+        margin-bottom: 1.5vh;
+        font-size: 2rem;
       }
     }
     a:hover {
-      color:@red;
+      color: @red;
     }
-
   }
 }
-header:hover{
-    background-color:rgba(123, 121, 121, 0.3);
-    color:black;
-    nav{
-      border-color:@mint;
-    a{
-        color:white;
-  
-        @media @phone{
-            color:black;
-        }
+header:hover {
+  background-color: rgba(123, 121, 121, 0.3);
+  color: black;
+  nav {
+    border-color: @mint;
+    a {
+      color: white;
+
+      @media @phone {
+        color: black;
+      }
     }
-    a:hover{
-      color:@mint;
+    a:hover {
+      color: @mint;
     }
-}
+  }
 }

@@ -21,7 +21,7 @@ body {
       margin-left: 10%;
       height: 55vh;
       -webkit-box-shadow: 0 0 10px black;
-        box-shadow: 0 0 10px black;
+      box-shadow: 0 0 10px black;
 
       @media @phone {
         height: 70vh;
@@ -84,32 +84,42 @@ body {
         p {
           .cptext();
         }
+        a {
+          .btnstyle();
+        }
       }
     }
     .campaign2 {
       .displayflex(row-reverse);
       width: 80vw;
-      margin-bottom:2vh;
-      
+      margin-bottom: 2vh;
+      text-align: center;
 
       .c2img {
-        img{
-        .img();
-        height: 35vh;
-      }}
+        img {
+          .img();
+          height: 35vh;
+        }
+      }
 
       .c2text {
-        background-color:rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
         border-radius: 10px;
-        margin-right:2vw;
-        height:35vh;
+        margin-right: 2vw;
+        height: 35vh;
         -webkit-box-shadow: 0 0 10px black;
         box-shadow: 0 0 10px black;
+
         h3 {
           .h3text();
         }
         p {
           .cptext();
+        }
+        a {
+          .btnstyle();
+          margin-right: 0;
+          margin-left: 4%;
         }
       }
     }
@@ -129,6 +139,9 @@ body {
         }
         p {
           .cptext();
+        }
+        a {
+          .btnstyle();
         }
       }
     }
