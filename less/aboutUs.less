@@ -17,14 +17,27 @@
     .members {
         display: flex;
         flex-direction: row;
-        height: 100vh;
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
 
+        @media @phone{
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+        }
+
         .member {
             width: 30%;
             margin-bottom: 1.4rem;
+            
+            @media @mobile {
+                margin: 1.4rem 0.8rem;
+            }
+
+            @media @phone {
+                width: 100%; 
+            }
 
             h2 {
                 font-size: 2.0rem;
@@ -33,11 +46,20 @@
             }
 
             p  {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-family: 'Roboto', sans-serif;
                 text-align: center;
-                padding-right: 1.5rem;
+                padding: 0 1.5rem;
                 font-weight: bold;
+                
+                @media @mobile {
+                    padding: 0rem;
+                    font-size: 1rem;
+                }
+
+                @media @phone {
+                    padding: 0 2rem;
+                }
             }
 
             .team-image {
@@ -49,6 +71,25 @@
                     border: 3px #17f1ce  solid; 
                 }
             }
+
+            .icons{ 
+                display: flex;
+                justify-content: center;
+                padding-bottom: 0.5rem;
+                text-decoration: none;
+                color: #333;
+                 
+                    i {
+                        &:hover {
+                            color: lighten(#333, 50%);
+                         }  
+                 }
+            }
         }
     }
 }
+
+// media query 
+
+@phone: ~"(max-width:500px)";
+@mobile: ~"(max-width: 800px)"; 
