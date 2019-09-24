@@ -20,17 +20,29 @@ body {
       background-color: rgba(255, 255, 255, 0.8);
       width: 80vw;
       margin-left: 10%;
-      height: 55vh;
+      height: 55;
       -webkit-box-shadow: 0 0 10px black;
       box-shadow: 0 0 10px black;
 
       @media @phone {
-        height: 70vh;
+        height: 80vh;
         width: 80vw;
-        background-color: @mint;
+        font-size: 1.8rem;
         margin-bottom: 4vh;
+        -webkit-box-shadow: 0 0 10px @teal;
+        box-shadow: 0 0 10px @teal;
       }
 
+      h1:after {
+        @media @phone {
+          content: ""; /* This is necessary for the pseudo element to work. */
+          display: block; /* This will put the pseudo element on its own line. */
+          margin: 0 auto; /* This will center the border. */
+          width: 80%; /* Change this to whatever width you want. */
+          margin-bottom: 2rem;
+          border-bottom: 2px solid @red; /* This creates the border. Replace black with whatever color you want. */
+        }
+      }
       p {
         text-align: center;
         width: 70vw;
@@ -50,19 +62,21 @@ body {
         text-align: center;
         padding-top: 12px;
         text-decoration: none;
+        margin-bottom: 2rem;
 
         @media @phone {
-          width: 300px;
-          height: 70px;
-          margin-bottom: 4vh;
-          padding-top: 2vh;
+          width: 20rem;
+          height: 5rem;
+          margin-bottom: 4rem;
+          padding-bottom: 5rem;
           font-size: 3rem;
-          background-color: @red;
+          background-color: @mint;
         }
       }
       a:hover {
         background-color: @teal;
-        border: 1px solid black;
+        -webkit-box-shadow: 0 0 10px @teal;
+        box-shadow: 0 0 10px @teal;
       }
     }
   } //this ends the styling for the top content
@@ -75,6 +89,9 @@ body {
     .campaign1 {
       //this is the styling for the first campaign card
       .campaignstyle();
+      @media @tablet{
+        .displayflex(column);
+      }
 
       @media @phone {
         .displayflex(column);
@@ -84,23 +101,39 @@ body {
       .c1img {
         img {
           .img();
-
+          @media @tablet {
+            width: 80vw;
+          }
           @media @phone {
             width: 80vw;
             margin-left: 1.5%;
             margin-bottom: 1vh;
+            -webkit-box-shadow: 0 0 10px @red;
+            box-shadow: 0 0 10px @red;
           }
         }
       }
 
       .c1text {
         .ctext();
+
+        @media @tablet {
+          width: 80vw;
+        }
         @media @phone {
           width: 80vw;
-          height: 40vh;
+          height: 45vh;
+          -webkit-box-shadow: 0 0 10px @teal;
+          box-shadow: 0 0 10px @teal;
         }
+
         h3 {
           .h3text();
+
+          @media @tablet {
+            width: 20vw;
+            margin-left:22rem;
+          }
           @media @phone {
             width: 40vw;
             margin-left: 25%;
@@ -112,6 +145,13 @@ body {
         a {
           .btnstyle();
         }
+        a:hover {
+          @media @phone {
+            background-color: @teal;
+            -webkit-box-shadow: 0 0 10px @teal;
+            box-shadow: 0 0 10px @teal;
+          }
+        }
       }
     } // this ends the styling for the first campaign card
 
@@ -121,7 +161,9 @@ body {
       width: 80vw;
       margin-bottom: 4vh;
       text-align: center;
-
+      @media @tablet{
+        .displayflex(column)
+      }
       @media @phone {
         .displayflex(column);
         margin-bottom: 4vh;
@@ -131,10 +173,17 @@ body {
         img {
           .img();
           height: 35vh;
+
+          @media @tablet {
+            width: 80vw;
+          }
+
           @media @phone {
             width: 80vw;
             margin-left: 1.5%;
             margin-bottom: 1vh;
+            -webkit-box-shadow: 0 0 10px @red;
+            box-shadow: 0 0 10px @red;
           }
         }
       }
@@ -146,16 +195,27 @@ body {
         height: 35vh;
         -webkit-box-shadow: 0 0 10px black;
         box-shadow: 0 0 10px black;
-
+        @media @tablet {
+          width: 80vw;
+          
+        }
         @media @phone {
           width: 80vw;
-          height: 40vh;
+          height: 45vh;
           margin-right: 0;
           margin-left: 2%;
+          -webkit-box-shadow: 0 0 10px @teal;
+          box-shadow: 0 0 10px @teal;
         }
 
         h3 {
           .h3text();
+
+          @media @tablet {
+            width: 20vw;
+            margin-left:22rem;
+          }
+
           @media @phone {
             width: 40vw;
             margin-left: 25%;
@@ -169,8 +229,19 @@ body {
           margin-right: 0;
           margin-left: 4%;
 
+          @media @tablet{
+            margin-right:5rem;
+          }
+
           @media @phone {
             margin-left: 0;
+          }
+        }
+        a:hover {
+          @media @phone {
+            background-color: @teal;
+            -webkit-box-shadow: 0 0 10px @teal;
+            box-shadow: 0 0 10px @teal;
           }
         }
       }
@@ -179,6 +250,10 @@ body {
     .campaign3 {
       // this is the styling for the third campaign card
       .campaignstyle();
+
+      @media @tablet{
+        .displayflex(column);
+      }
       @media @phone {
         .displayflex(column);
       }
@@ -186,25 +261,41 @@ body {
       .c3img {
         img {
           .img();
-
+          @media @tablet {
+            width: 80vw;
+          }
           @media @phone {
             width: 80vw;
             margin-left: 1.5%;
             margin-bottom: 1vh;
+            -webkit-box-shadow: 0 0 10px @red;
+            box-shadow: 0 0 10px @red;
           }
         }
       }
 
       .c3text {
         .ctext();
-
+        @media @tablet {
+          .displayflex(column,center,center);
+          width: 80vw;
+          font-size: 1.6rem;
+        }
         @media @phone {
           width: 80vw;
-          height: 40vh;
+          height: 45vh;
+          -webkit-box-shadow: 0 0 10px @teal;
+          box-shadow: 0 0 10px @teal;
+          margin-left: 0;
         }
 
         h3 {
           .h3text();
+          @media @tablet {
+            width: 20vw;
+            margin-right:18rem;
+          }
+
           @media @phone {
             width: 40vw;
             margin-left: 25%;
@@ -215,6 +306,13 @@ body {
         }
         a {
           .btnstyle();
+        }
+        a:hover {
+          @media @phone {
+            background-color: @teal;
+            -webkit-box-shadow: 0 0 10px @teal;
+            box-shadow: 0 0 10px @teal;
+          }
         }
       }
     } // this ends the styling for the third campaign card
@@ -230,10 +328,14 @@ body {
       border-top: 2px solid white;
       font-family: "Noto", serif;
       font-size: 1.8rem;
-
+      @media @tablet{
+        width:40vw;
+        margin-left:23rem;;
+        
+      }
       @media @phone {
-        width:50vw;
-        margin:1vh 0vw 1vh 25vw;
+        width: 50vw;
+        margin: 1vh 0vw 1vh 25vw;
         border-bottom: 2px solid black;
         border-top: 2px solid black;
       }
