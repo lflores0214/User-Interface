@@ -11,6 +11,7 @@ body {
   }
 
   .main-content {
+    //this begins the styling for the top content
     margin-bottom: 2vh;
     .intro {
       .displayflex(column);
@@ -25,7 +26,9 @@ body {
 
       @media @phone {
         height: 70vh;
+        width: 80vw;
         background-color: @mint;
+        margin-bottom: 4vh;
       }
 
       p {
@@ -62,24 +65,46 @@ body {
         border: 1px solid black;
       }
     }
-  }
+  } //this ends the styling for the top content
+
+  //this begins the styling for the campaign cards
   .campaigns {
     .displayflex(column, center, center);
     width: 100vw;
 
     .campaign1 {
+      //this is the styling for the first campaign card
       .campaignstyle();
+
+      @media @phone {
+        .displayflex(column);
+        margin-bottom: 4vh;
+      }
 
       .c1img {
         img {
           .img();
+
+          @media @phone {
+            width: 80vw;
+            margin-left: 1.5%;
+            margin-bottom: 1vh;
+          }
         }
       }
 
       .c1text {
         .ctext();
+        @media @phone {
+          width: 80vw;
+          height: 40vh;
+        }
         h3 {
           .h3text();
+          @media @phone {
+            width: 40vw;
+            margin-left: 25%;
+          }
         }
         p {
           .cptext();
@@ -88,17 +113,29 @@ body {
           .btnstyle();
         }
       }
-    }
+    } // this ends the styling for the first campaign card
+
     .campaign2 {
+      // this is the styling for the second campaign card
       .displayflex(row-reverse);
       width: 80vw;
-      margin-bottom: 2vh;
+      margin-bottom: 4vh;
       text-align: center;
+
+      @media @phone {
+        .displayflex(column);
+        margin-bottom: 4vh;
+      }
 
       .c2img {
         img {
           .img();
           height: 35vh;
+          @media @phone {
+            width: 80vw;
+            margin-left: 1.5%;
+            margin-bottom: 1vh;
+          }
         }
       }
 
@@ -110,8 +147,19 @@ body {
         -webkit-box-shadow: 0 0 10px black;
         box-shadow: 0 0 10px black;
 
+        @media @phone {
+          width: 80vw;
+          height: 40vh;
+          margin-right: 0;
+          margin-left: 2%;
+        }
+
         h3 {
           .h3text();
+          @media @phone {
+            width: 40vw;
+            margin-left: 25%;
+          }
         }
         p {
           .cptext();
@@ -120,22 +168,47 @@ body {
           .btnstyle();
           margin-right: 0;
           margin-left: 4%;
+
+          @media @phone {
+            margin-left: 0;
+          }
         }
       }
-    }
+    } // this ends the styling for the second campaign card
+
     .campaign3 {
+      // this is the styling for the third campaign card
       .campaignstyle();
+      @media @phone {
+        .displayflex(column);
+      }
 
       .c3img {
         img {
           .img();
+
+          @media @phone {
+            width: 80vw;
+            margin-left: 1.5%;
+            margin-bottom: 1vh;
+          }
         }
       }
 
       .c3text {
         .ctext();
+
+        @media @phone {
+          width: 80vw;
+          height: 40vh;
+        }
+
         h3 {
           .h3text();
+          @media @phone {
+            width: 40vw;
+            margin-left: 25%;
+          }
         }
         p {
           .cptext();
@@ -144,6 +217,43 @@ body {
           .btnstyle();
         }
       }
+    } // this ends the styling for the third campaign card
+  }
+  footer {
+    nav {
+      width: 20vw;
+      .displayflex(row, space-between, center);
+      margin: 1vh 0vw 2vh 40vw;
+      font-size: 1.6rem;
+      margin-top: 2vh;
+      border-bottom: 2px solid white;
+      border-top: 2px solid white;
+      font-family: "Noto", serif;
+      font-size: 1.8rem;
+
+      @media @phone {
+        width:50vw;
+        margin:1vh 0vw 1vh 25vw;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 1% 0 1% 0;
+
+        @media @phone {
+          color: black;
+        }
+      }
+      a:hover {
+        color: @mint;
+      }
+    }
+    nav:hover {
+      border-bottom: 2px solid @mint;
+      border-top: 2px solid @mint;
     }
   }
 }

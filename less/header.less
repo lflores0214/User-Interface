@@ -10,11 +10,13 @@ header {
     border-bottom: 2px solid white;
     font-family: "Noto", serif;
     font-size: 1.8rem;
+    
 
     @media @phone {
       .displayflex(column);
       font-size: 1.6rem;
-      width: 70vw;
+      width: 80vw;
+      border-bottom: 2px dotted @mint;
     }
 
     a {
@@ -23,6 +25,7 @@ header {
       text-align: center;
 
       @media @phone {
+        color: black;
         border-bottom: 1px solid black;
         margin-bottom: 1.5vh;
         font-size: 2rem;
@@ -34,10 +37,17 @@ header {
   }
 }
 header:hover {
-  background-color: rgba(123, 121, 121, 0.3);
+  background-color: rgba(123, 121, 121, 0.7);
   color: black;
+
+  @media @phone {
+    background-color: white;
+  }
   nav {
     border-color: @mint;
+    @media @phone {
+      border-bottom: 2px dotted @mint;
+    }
     a {
       color: white;
 
@@ -47,6 +57,11 @@ header:hover {
     }
     a:hover {
       color: @mint;
+
+      @media @phone {
+        color: @mint;
+        border-bottom: 2px solid @mint;
+      }
     }
   }
 }
