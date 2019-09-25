@@ -116,16 +116,16 @@ body {
       .c1text {
         .ctext();
         @media @tablet {
-          .displayflex(column, center, center);
+          .displayflex(column, space-between, center);
+          height: 40vh;
           width: 80vw;
           font-size: 1.6rem;
         }
-        @media @tablet {
-          width: 80vw;
-        }
+        
         @media @phone {
+          .displayflex(column, space-between, center);
           width: 80vw;
-          height: 45vh;
+          height: 50vh;
           -webkit-box-shadow: 0 0 10px @teal;
           box-shadow: 0 0 10px @teal;
         }
@@ -136,7 +136,7 @@ body {
             width: 20vw;
             margin-right: 18rem;
             margin-top: 2rem;
-            margin-bottom: 2rem;
+            
           }
 
           @media @phone {
@@ -168,101 +168,82 @@ body {
 
     .campaign2 {
       // this is the styling for the second campaign card
-      .displayflex(row-reverse);
-      width: 80vw;
-      margin-bottom: 2vh;
-      text-align: center;
-      @media @tablet {
+      .campaignstyle(row-reverse);
+      @media @tablet{
         .displayflex(column);
       }
-      @media @phone {
+      @media @phone{
         .displayflex(column);
-        margin-bottom: 4vh;
+        margin-bottom:4vh;
       }
-
-      .c2img {
-        img {
+      .c2img{
+        img{
           .img();
-          height: 35vh;
-
-          @media @tablet {
+          @media @tablet{
             width: 80vw;
           }
-
-          @media @phone {
+          @media @phone{
             width: 80vw;
-            margin-left: 1.5%;
+            margin-left:1.5%;
             margin-bottom: 1vh;
             -webkit-box-shadow: 0 0 10px @red;
-            box-shadow: 0 0 10px @red;
+            box-shadow: 0 0 10px @red;          
           }
         }
       }
-
-      .c2text {
+      .c2text{
         .ctext();
         margin-left:0;
         margin-right:2vw;
-        @media @tablet {
-          width: 80vw;
-          font-size: 1.6rem;
+        @media @tablet{
+          .displayflex(column, space-between, center);
+          width:80vw;
+          height: 40vh;
+          font-size:1.6rem;
         }
         @media @phone {
           width: 80vw;
-          height: 45vh;
-          margin-right: 0;
-          margin-left: 2%;
+          height:46vh;
           -webkit-box-shadow: 0 0 10px @teal;
           box-shadow: 0 0 10px @teal;
-          
         }
 
-        h3 {
+        
+        h3{
           .h3text();
-          width: 10vw;
-          margin-left:18vw;;
-          @media @tablet {
+          @media @tablet{
             width: 20vw;
-            margin-left: 22rem;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            margin-right:18rem;
+            margin-top:2rem;
+            
           }
-
-          @media @phone {
-            width: 40vw;
-            margin-left: 7rem;
+          @media @phone{
+            width:40vw;
+            margin-left:18rem;
           }
         }
-        p {
+        p{
           .cptext();
         }
-        a {
-          width:150px;
-          border-radius: 10px;
-          background-color: @mint;
-          color: black;
-          border-radius: 10px;
-          font-size: 2rem;
-          text-align: center;
-          padding: 1% 2% 1% 2%;
-          text-decoration: none;
-          margin-top: 2vh;
-          margin-right: 4%;
-          margin-bottom: 2rem;
-          @media @tablet {
-            margin-top: 0;
+        a{
+          .btnstyle();
+          margin-bottom:2rem;
+          margin-right:0;
+          @media @tablet{
+            margin-top:0;
+            margin-bottom:0;
           }
-          @media @phone {
-            margin-bottom: 5rem;
+          @media @phone{
+            margin-bottom:5rem;
           }
         }
-
         a:hover {
           background-color: @teal;
           -webkit-box-shadow: 0 0 10px @teal;
           box-shadow: 0 0 10px @teal;
         }
       }
+
     } // this ends the styling for the second campaign card
 
     .campaign3 {
@@ -295,13 +276,14 @@ body {
       .c3text {
         .ctext();
         @media @tablet {
-          .displayflex(column, center, center);
+          .displayflex(column, space-between, center);
           width: 80vw;
+          height: 40vh;
           font-size: 1.6rem;
         }
         @media @phone {
           width: 80vw;
-          height: 45vh;
+          height: 50vh;
           -webkit-box-shadow: 0 0 10px @teal;
           box-shadow: 0 0 10px @teal;
           margin-left: 0;

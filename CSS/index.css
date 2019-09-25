@@ -5,15 +5,6 @@
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
 }
-.campaignstyle {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 80vw;
-  margin-bottom: 2vh;
-  text-align: center;
-}
 .ctext {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -21,6 +12,7 @@
   height: 35vh;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
+  padding-bottom: 20%;
 }
 .h3text {
   font-size: 2.4rem;
@@ -34,7 +26,7 @@
 .cptext {
   font-size: 1.8rem;
   text-align: center;
-  padding: 2%;
+  padding: 0 2% 0 2%;
   line-height: 1.5;
   margin-bottom: 5vh;
 }
@@ -48,7 +40,6 @@
   text-align: center;
   padding: 1% 2% 1% 2%;
   text-decoration: none;
-  margin-top: 2vh;
   margin-right: 4%;
 }
 .phonewidth {
@@ -425,7 +416,7 @@ body .campaigns {
 body .campaigns .campaign1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 80vw;
   margin-bottom: 2vh;
@@ -476,26 +467,27 @@ body .campaigns .campaign1 .c1text {
   height: 35vh;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
+  padding-bottom: 20%;
 }
 @media (max-width: 800px) {
   body .campaigns .campaign1 .c1text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: 40vh;
     width: 80vw;
     font-size: 1.6rem;
   }
 }
-@media (max-width: 800px) {
-  body .campaigns .campaign1 .c1text {
-    width: 80vw;
-  }
-}
 @media (max-width:500px) {
   body .campaigns .campaign1 .c1text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 80vw;
-    height: 45vh;
+    height: 50vh;
     -webkit-box-shadow: 0 0 10px #17f1ce;
     box-shadow: 0 0 10px #17f1ce;
   }
@@ -514,7 +506,6 @@ body .campaigns .campaign1 .c1text h3 {
     width: 20vw;
     margin-right: 18rem;
     margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 }
 @media (max-width:500px) {
@@ -526,7 +517,7 @@ body .campaigns .campaign1 .c1text h3 {
 body .campaigns .campaign1 .c1text p {
   font-size: 1.8rem;
   text-align: center;
-  padding: 2%;
+  padding: 0 2% 0 2%;
   line-height: 1.5;
   margin-bottom: 5vh;
 }
@@ -540,7 +531,6 @@ body .campaigns .campaign1 .c1text a {
   text-align: center;
   padding: 1% 2% 1% 2%;
   text-decoration: none;
-  margin-top: 2vh;
   margin-right: 4%;
   margin-bottom: 2rem;
 }
@@ -588,9 +578,9 @@ body .campaigns .campaign2 {
 body .campaigns .campaign2 .c2img img {
   border-radius: 10px;
   width: 70vw;
+  height: 35vh;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
-  height: 35vh;
 }
 @media (max-width: 800px) {
   body .campaigns .campaign2 .c2img img {
@@ -613,21 +603,25 @@ body .campaigns .campaign2 .c2text {
   height: 35vh;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
+  padding-bottom: 20%;
   margin-left: 0;
   margin-right: 2vw;
 }
 @media (max-width: 800px) {
   body .campaigns .campaign2 .c2text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 80vw;
+    height: 40vh;
     font-size: 1.6rem;
   }
 }
 @media (max-width:500px) {
   body .campaigns .campaign2 .c2text {
     width: 80vw;
-    height: 45vh;
-    margin-right: 0;
-    margin-left: 2%;
+    height: 46vh;
     -webkit-box-shadow: 0 0 10px #17f1ce;
     box-shadow: 0 0 10px #17f1ce;
   }
@@ -638,47 +632,47 @@ body .campaigns .campaign2 .c2text h3 {
   padding-top: 2vh;
   margin-bottom: 2vh;
   border-bottom: 3px solid #17f1ce;
-  margin-left: 20vw;
   width: 10vw;
-  margin-left: 18vw;
+  margin-left: 20vw;
 }
 @media (max-width: 800px) {
   body .campaigns .campaign2 .c2text h3 {
     width: 20vw;
-    margin-left: 22rem;
+    margin-right: 18rem;
     margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 }
 @media (max-width:500px) {
   body .campaigns .campaign2 .c2text h3 {
     width: 40vw;
-    margin-left: 7rem;
+    margin-left: 18rem;
   }
 }
 body .campaigns .campaign2 .c2text p {
   font-size: 1.8rem;
   text-align: center;
-  padding: 2%;
+  padding: 0 2% 0 2%;
   line-height: 1.5;
   margin-bottom: 5vh;
 }
 body .campaigns .campaign2 .c2text a {
-  width: 150px;
   background-color: #8ff8e7;
   color: black;
+  width: 150px;
+  height: 50px;
   border-radius: 10px;
   font-size: 2rem;
   text-align: center;
   padding: 1% 2% 1% 2%;
   text-decoration: none;
-  margin-top: 2vh;
   margin-right: 4%;
   margin-bottom: 2rem;
+  margin-right: 0;
 }
 @media (max-width: 800px) {
   body .campaigns .campaign2 .c2text a {
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
 @media (max-width:500px) {
@@ -694,7 +688,7 @@ body .campaigns .campaign2 .c2text a:hover {
 body .campaigns .campaign3 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 80vw;
   margin-bottom: 2vh;
@@ -745,21 +739,23 @@ body .campaigns .campaign3 .c3text {
   height: 35vh;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
+  padding-bottom: 20%;
 }
 @media (max-width: 800px) {
   body .campaigns .campaign3 .c3text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 80vw;
+    height: 40vh;
     font-size: 1.6rem;
   }
 }
 @media (max-width:500px) {
   body .campaigns .campaign3 .c3text {
     width: 80vw;
-    height: 45vh;
+    height: 50vh;
     -webkit-box-shadow: 0 0 10px #17f1ce;
     box-shadow: 0 0 10px #17f1ce;
     margin-left: 0;
@@ -791,7 +787,7 @@ body .campaigns .campaign3 .c3text h3 {
 body .campaigns .campaign3 .c3text p {
   font-size: 1.8rem;
   text-align: center;
-  padding: 2%;
+  padding: 0 2% 0 2%;
   line-height: 1.5;
   margin-bottom: 5vh;
 }
@@ -805,7 +801,6 @@ body .campaigns .campaign3 .c3text a {
   text-align: center;
   padding: 1% 2% 1% 2%;
   text-decoration: none;
-  margin-top: 2vh;
   margin-right: 4%;
   margin-bottom: 2rem;
 }

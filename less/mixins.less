@@ -20,8 +20,11 @@
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
 }
-.campaignstyle {
-  .displayflex(row, space-between, center);
+.campaignstyle (@direction:row, @justify:center, @align:center){ 
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
   width: 80vw;
   margin-bottom: 2vh;
   text-align: center;
@@ -33,6 +36,7 @@
   height: 35vh;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
+  padding-bottom: 20%;
 }
 
 .h3text {
@@ -48,7 +52,7 @@
 .cptext {
   font-size: 1.8rem;
   text-align: center;
-  padding: 2%;
+  padding: 0 2% 0 2%;
   line-height: 1.5;
   margin-bottom: 5vh;
 }
@@ -64,9 +68,7 @@
   text-align: center;
   padding: 1% 2% 1% 2%;
   text-decoration: none;
-  margin-top: 2vh;
   margin-right: 4%;
-  
 }
 .phonewidth {
   width: 100vw;
