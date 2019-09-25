@@ -15,12 +15,12 @@
 }
 .img {
   border-radius: 10px;
-  width: 70vw;
+  width: 80vw;
   height: 35vh;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
 }
-.campaignstyle (@direction:row, @justify:center, @align:center){ 
+.campaignstyle (@direction:row, @justify:center, @align:center) {
   display: flex;
   flex-direction: @direction;
   justify-content: @justify;
@@ -40,13 +40,21 @@
 }
 
 .h3text {
+  display: flex;
+  justify-content: center;
   font-size: 2.4rem;
-  text-align: center;
-  padding-top: 2vh;
-  margin-bottom: 2vh;
-  border-bottom: 3px solid @teal;
-  width: 10vw;
-  margin-left: 20vw;
+  // text-align: center;
+  // padding-top: 2vh;
+  // margin-bottom: 2vh;
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 10vw; /* Change this to whatever width you want. */
+  margin-bottom: 2rem;
+  margin-top:2vh;
+  border-bottom: 3px solid @teal; /* This creates the border. Replace black with whatever color you want. */
+
+  // margin-left: 20vw;
 }
 
 .cptext {
@@ -68,7 +76,7 @@
   text-align: center;
   padding: 1% 2% 1% 2%;
   text-decoration: none;
-  margin-right: 4%;
+  
 }
 .phonewidth {
   width: 100vw;
