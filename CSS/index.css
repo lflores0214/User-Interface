@@ -15,13 +15,21 @@
   padding-bottom: 20%;
 }
 .h3text {
+  display: flex;
+  justify-content: center;
   font-size: 2.4rem;
-  text-align: center;
-  padding-top: 2vh;
-  margin-bottom: 2vh;
-  border-bottom: 3px solid #17f1ce;
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
   width: 10vw;
-  margin-left: 20vw;
+  /* Change this to whatever width you want. */
+  margin-bottom: 2rem;
+  margin-top: 2vh;
+  border-bottom: 3px solid #17f1ce;
+  /* This creates the border. Replace black with whatever color you want. */
 }
 .cptext {
   font-size: 1.8rem;
@@ -40,7 +48,6 @@
   text-align: center;
   padding: 1% 2% 1% 2%;
   text-decoration: none;
-  margin-right: 4%;
 }
 .phonewidth {
   width: 100vw;
@@ -343,7 +350,7 @@ body .main-content .intro {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   width: 80vw;
-  margin-left: 10%;
+  margin-left: 9.6%;
   height: 55;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
@@ -387,7 +394,7 @@ body .main-content .intro a {
   border-radius: 10px;
   font-size: 2rem;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 10px;
   text-decoration: none;
   margin-bottom: 2rem;
 }
@@ -475,9 +482,10 @@ body .campaigns .campaign1 .c1text {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 40vh;
+    height: 38vh;
     width: 80vw;
     font-size: 1.6rem;
+    margin-left: 0;
   }
 }
 @media (max-width:500px) {
@@ -493,25 +501,31 @@ body .campaigns .campaign1 .c1text {
   }
 }
 body .campaigns .campaign1 .c1text h3 {
+  display: flex;
+  justify-content: center;
   font-size: 2.4rem;
-  text-align: center;
-  padding-top: 2vh;
-  margin-bottom: 2vh;
-  border-bottom: 3px solid #17f1ce;
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
   width: 10vw;
-  margin-left: 20vw;
+  /* Change this to whatever width you want. */
+  margin-bottom: 2rem;
+  margin-top: 2vh;
+  border-bottom: 3px solid #17f1ce;
+  /* This creates the border. Replace black with whatever color you want. */
 }
 @media (max-width: 800px) {
   body .campaigns .campaign1 .c1text h3 {
     width: 20vw;
-    margin-right: 18rem;
     margin-top: 2rem;
   }
 }
 @media (max-width:500px) {
   body .campaigns .campaign1 .c1text h3 {
     width: 40vw;
-    margin-left: 18rem;
   }
 }
 body .campaigns .campaign1 .c1text p {
@@ -531,17 +545,11 @@ body .campaigns .campaign1 .c1text a {
   text-align: center;
   padding: 1% 2% 1% 2%;
   text-decoration: none;
-  margin-right: 4%;
   margin-bottom: 2rem;
 }
 @media (max-width: 800px) {
   body .campaigns .campaign1 .c1text a {
     margin-top: 0;
-  }
-}
-@media (max-width:500px) {
-  body .campaigns .campaign1 .c1text a {
-    margin-bottom: 5rem;
   }
 }
 body .campaigns .campaign1 .c1text a:hover {
@@ -614,8 +622,9 @@ body .campaigns .campaign2 .c2text {
     justify-content: space-between;
     align-items: center;
     width: 80vw;
-    height: 40vh;
+    height: 38vh;
     font-size: 1.6rem;
+    margin-right: 0;
   }
 }
 @media (max-width:500px) {
@@ -627,25 +636,31 @@ body .campaigns .campaign2 .c2text {
   }
 }
 body .campaigns .campaign2 .c2text h3 {
+  display: flex;
+  justify-content: center;
   font-size: 2.4rem;
-  text-align: center;
-  padding-top: 2vh;
-  margin-bottom: 2vh;
-  border-bottom: 3px solid #17f1ce;
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
   width: 10vw;
-  margin-left: 20vw;
+  /* Change this to whatever width you want. */
+  margin-bottom: 2rem;
+  margin-top: 2vh;
+  border-bottom: 3px solid #17f1ce;
+  /* This creates the border. Replace black with whatever color you want. */
 }
 @media (max-width: 800px) {
   body .campaigns .campaign2 .c2text h3 {
     width: 20vw;
-    margin-right: 18rem;
     margin-top: 2rem;
   }
 }
 @media (max-width:500px) {
   body .campaigns .campaign2 .c2text h3 {
     width: 40vw;
-    margin-left: 18rem;
   }
 }
 body .campaigns .campaign2 .c2text p {
@@ -665,7 +680,6 @@ body .campaigns .campaign2 .c2text a {
   text-align: center;
   padding: 1% 2% 1% 2%;
   text-decoration: none;
-  margin-right: 4%;
   margin-bottom: 2rem;
   margin-right: 0;
 }
@@ -748,8 +762,9 @@ body .campaigns .campaign3 .c3text {
     justify-content: space-between;
     align-items: center;
     width: 80vw;
-    height: 40vh;
+    height: 38vh;
     font-size: 1.6rem;
+    margin-left: 0;
   }
 }
 @media (max-width:500px) {
@@ -762,18 +777,25 @@ body .campaigns .campaign3 .c3text {
   }
 }
 body .campaigns .campaign3 .c3text h3 {
+  display: flex;
+  justify-content: center;
   font-size: 2.4rem;
-  text-align: center;
-  padding-top: 2vh;
-  margin-bottom: 2vh;
-  border-bottom: 3px solid #17f1ce;
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
   width: 10vw;
-  margin-left: 20vw;
+  /* Change this to whatever width you want. */
+  margin-bottom: 2rem;
+  margin-top: 2vh;
+  border-bottom: 3px solid #17f1ce;
+  /* This creates the border. Replace black with whatever color you want. */
 }
 @media (max-width: 800px) {
   body .campaigns .campaign3 .c3text h3 {
     width: 20vw;
-    margin-right: 18rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -781,7 +803,6 @@ body .campaigns .campaign3 .c3text h3 {
 @media (max-width:500px) {
   body .campaigns .campaign3 .c3text h3 {
     width: 40vw;
-    margin-left: 18rem;
   }
 }
 body .campaigns .campaign3 .c3text p {
@@ -801,7 +822,6 @@ body .campaigns .campaign3 .c3text a {
   text-align: center;
   padding: 1% 2% 1% 2%;
   text-decoration: none;
-  margin-right: 4%;
   margin-bottom: 2rem;
 }
 @media (max-width: 800px) {
