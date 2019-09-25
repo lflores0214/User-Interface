@@ -53,7 +53,7 @@ body {
 
       a {
         border-radius: 10px;
-        background-color: @teal;
+        background-color: @mint;
         color: black;
         width: 150px;
         height: 50px;
@@ -89,10 +89,9 @@ body {
     .campaign1 {
       //this is the styling for the first campaign card
       .campaignstyle();
-      @media @tablet{
+      @media @tablet {
         .displayflex(column);
       }
-
       @media @phone {
         .displayflex(column);
         margin-bottom: 4vh;
@@ -116,7 +115,11 @@ body {
 
       .c1text {
         .ctext();
-
+        @media @tablet {
+          .displayflex(column, center, center);
+          width: 80vw;
+          font-size: 1.6rem;
+        }
         @media @tablet {
           width: 80vw;
         }
@@ -129,14 +132,16 @@ body {
 
         h3 {
           .h3text();
-
           @media @tablet {
             width: 20vw;
-            margin-left:22rem;
+            margin-right: 18rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
           }
+
           @media @phone {
             width: 40vw;
-            margin-left: 25%;
+            margin-left: 18rem;
           }
         }
         p {
@@ -144,13 +149,19 @@ body {
         }
         a {
           .btnstyle();
-        }
-        a:hover {
-          @media @phone {
-            background-color: @teal;
-            -webkit-box-shadow: 0 0 10px @teal;
-            box-shadow: 0 0 10px @teal;
+          margin-bottom: 2rem;
+          @media @tablet {
+            margin-top: 0;
           }
+          @media @phone {
+            margin-bottom: 5rem;
+          }
+        }
+
+        a:hover {
+          background-color: @teal;
+          -webkit-box-shadow: 0 0 10px @teal;
+          box-shadow: 0 0 10px @teal;
         }
       }
     } // this ends the styling for the first campaign card
@@ -159,10 +170,10 @@ body {
       // this is the styling for the second campaign card
       .displayflex(row-reverse);
       width: 80vw;
-      margin-bottom: 4vh;
+      margin-bottom: 2vh;
       text-align: center;
-      @media @tablet{
-        .displayflex(column)
+      @media @tablet {
+        .displayflex(column);
       }
       @media @phone {
         .displayflex(column);
@@ -189,15 +200,12 @@ body {
       }
 
       .c2text {
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 10px;
-        margin-right: 2vw;
-        height: 35vh;
-        -webkit-box-shadow: 0 0 10px black;
-        box-shadow: 0 0 10px black;
+        .ctext();
+        margin-left:0;
+        margin-right:2vw;
         @media @tablet {
           width: 80vw;
-          
+          font-size: 1.6rem;
         }
         @media @phone {
           width: 80vw;
@@ -206,43 +214,53 @@ body {
           margin-left: 2%;
           -webkit-box-shadow: 0 0 10px @teal;
           box-shadow: 0 0 10px @teal;
+          
         }
 
         h3 {
           .h3text();
-
+          width: 10vw;
+          margin-left:18vw;;
           @media @tablet {
             width: 20vw;
-            margin-left:22rem;
+            margin-left: 22rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
           }
 
           @media @phone {
             width: 40vw;
-            margin-left: 25%;
+            margin-left: 7rem;
           }
         }
         p {
           .cptext();
         }
         a {
-          .btnstyle();
-          margin-right: 0;
-          margin-left: 4%;
-
-          @media @tablet{
-            margin-right:5rem;
+          width:150px;
+          border-radius: 10px;
+          background-color: @mint;
+          color: black;
+          border-radius: 10px;
+          font-size: 2rem;
+          text-align: center;
+          padding: 1% 2% 1% 2%;
+          text-decoration: none;
+          margin-top: 2vh;
+          margin-right: 4%;
+          margin-bottom: 2rem;
+          @media @tablet {
+            margin-top: 0;
           }
-
           @media @phone {
-            margin-left: 0;
+            margin-bottom: 5rem;
           }
         }
+
         a:hover {
-          @media @phone {
-            background-color: @teal;
-            -webkit-box-shadow: 0 0 10px @teal;
-            box-shadow: 0 0 10px @teal;
-          }
+          background-color: @teal;
+          -webkit-box-shadow: 0 0 10px @teal;
+          box-shadow: 0 0 10px @teal;
         }
       }
     } // this ends the styling for the second campaign card
@@ -250,12 +268,12 @@ body {
     .campaign3 {
       // this is the styling for the third campaign card
       .campaignstyle();
-
-      @media @tablet{
+      @media @tablet {
         .displayflex(column);
       }
       @media @phone {
         .displayflex(column);
+        margin-bottom: 4vh;
       }
 
       .c3img {
@@ -277,7 +295,7 @@ body {
       .c3text {
         .ctext();
         @media @tablet {
-          .displayflex(column,center,center);
+          .displayflex(column, center, center);
           width: 80vw;
           font-size: 1.6rem;
         }
@@ -293,12 +311,14 @@ body {
           .h3text();
           @media @tablet {
             width: 20vw;
-            margin-right:18rem;
+            margin-right: 18rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
           }
 
           @media @phone {
             width: 40vw;
-            margin-left: 25%;
+            margin-left: 18rem;
           }
         }
         p {
@@ -306,13 +326,19 @@ body {
         }
         a {
           .btnstyle();
-        }
-        a:hover {
-          @media @phone {
-            background-color: @teal;
-            -webkit-box-shadow: 0 0 10px @teal;
-            box-shadow: 0 0 10px @teal;
+          margin-bottom: 2rem;
+          @media @tablet {
+            margin-top: 0;
           }
+          @media @phone {
+            margin-bottom: 5rem;
+          }
+        }
+
+        a:hover {
+          background-color: @teal;
+          -webkit-box-shadow: 0 0 10px @teal;
+          box-shadow: 0 0 10px @teal;
         }
       }
     } // this ends the styling for the third campaign card
@@ -328,10 +354,9 @@ body {
       border-top: 2px solid white;
       font-family: "Noto", serif;
       font-size: 1.8rem;
-      @media @tablet{
-        width:40vw;
-        margin-left:23rem;;
-        
+      @media @tablet {
+        width: 40vw;
+        margin-left: 23rem;
       }
       @media @phone {
         width: 50vw;
