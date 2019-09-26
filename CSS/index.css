@@ -441,6 +441,7 @@ body .campaigns .campaign1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4vh;
   }
 }
 @media (max-width:500px) {
@@ -462,6 +463,7 @@ body .campaigns .campaign1 .c1img img {
 @media (max-width: 800px) {
   body .campaigns .campaign1 .c1img img {
     width: 80vw;
+    margin: 0 0 0 0;
   }
 }
 @media (max-width:500px) {
@@ -490,6 +492,7 @@ body .campaigns .campaign1 .c1text {
     height: 38vh;
     width: 80vw;
     font-size: 1.6rem;
+    margin: 0 0 0 0;
   }
 }
 @media (max-width:500px) {
@@ -530,7 +533,18 @@ body .campaigns .campaign1 .c1text h3 {
 }
 @media (max-width:500px) {
   body .campaigns .campaign1 .c1text h3 {
-    width: 40vw;
+    text-align: center;
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 45%;
+    /* Change this to whatever width you want. */
+    margin-top: 1vh;
+    border-bottom: 2px solid #f1173a;
+    /* This creates the border. Replace black with whatever color you want. */
   }
 }
 body .campaigns .campaign1 .c1text p {
@@ -577,6 +591,7 @@ body .campaigns .campaign2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4vh;
   }
 }
 @media (max-width:500px) {
@@ -664,7 +679,17 @@ body .campaigns .campaign2 .c2text h3 {
 }
 @media (max-width:500px) {
   body .campaigns .campaign2 .c2text h3 {
-    width: 40vw;
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 20vw;
+    /* Change this to whatever width you want. */
+    margin: 1vh 0 3vh 0;
+    border-bottom: 2px solid #f1173a;
+    /* This creates the border. Replace black with whatever color you want. */
   }
 }
 body .campaigns .campaign2 .c2text p {
@@ -718,6 +743,7 @@ body .campaigns .campaign3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4vh;
   }
 }
 @media (max-width:500px) {
@@ -805,7 +831,17 @@ body .campaigns .campaign3 .c3text h3 {
 }
 @media (max-width:500px) {
   body .campaigns .campaign3 .c3text h3 {
-    width: 40vw;
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 30vw;
+    /* Change this to whatever width you want. */
+    margin: 1vh 0 2vh 0;
+    border-bottom: 2px solid #f1173a;
+    /* This creates the border. Replace black with whatever color you want. */
   }
 }
 body .campaigns .campaign3 .c3text p {
