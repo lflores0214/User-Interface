@@ -91,9 +91,10 @@ body {
       .campaignstyle();
       @media @tablet {
         .displayflex(column);
+        margin-bottom: 4vh;
       }
       @media @phone {
-        .displayflex(column);
+        .displayflex(column, center, center);
         margin-bottom: 4vh;
       }
 
@@ -102,11 +103,11 @@ body {
           .img();
           @media @tablet {
             width: 80vw;
+            margin:0 0 0 0;
           }
           @media @phone {
             width: 80vw;
-            margin-left: 1.5%;
-            margin-bottom: 1vh;
+            margin: 0 0 1vh 0;
             -webkit-box-shadow: 0 0 10px @red;
             box-shadow: 0 0 10px @red;
           }
@@ -120,29 +121,34 @@ body {
           height: 38vh;
           width: 80vw;
           font-size: 1.6rem;
-          margin-left:0;
+          margin:0 0 0 0;
         }
-        
+
         @media @phone {
           .displayflex(column, space-between, center);
           width: 80vw;
           height: 50vh;
           -webkit-box-shadow: 0 0 10px @teal;
           box-shadow: 0 0 10px @teal;
+          margin: 0 0 0 0;
         }
 
         h3 {
           .h3text();
           @media @tablet {
             width: 20vw;
-            
+
             margin-top: 2rem;
-            
           }
 
           @media @phone {
-            width: 40vw;
-           
+            text-align: center;
+            content: ""; /* This is necessary for the pseudo element to work. */
+            display: block; /* This will put the pseudo element on its own line. */
+            margin: 0 auto; /* This will center the border. */
+            width: 45%; /* Change this to whatever width you want. */
+            margin-top:1vh;
+            border-bottom: 2px solid @red; /* This creates the border. Replace black with whatever color you want. */
           }
         }
         p {
@@ -155,7 +161,6 @@ body {
             margin-top: 0;
           }
           @media @phone {
-            
           }
         }
 
@@ -170,73 +175,75 @@ body {
     .campaign2 {
       // this is the styling for the second campaign card
       .campaignstyle(row-reverse);
-      @media @tablet{
+      @media @tablet {
         .displayflex(column);
+        margin-bottom: 4vh;
       }
-      @media @phone{
+      @media @phone {
         .displayflex(column);
-        margin-bottom:4vh;
+        margin-bottom: 4vh;
       }
-      .c2img{
-        img{
+      .c2img {
+        img {
           .img();
-          @media @tablet{
+          @media @tablet {
             width: 80vw;
           }
-          @media @phone{
+          @media @phone {
             width: 80vw;
-            margin-left:1.5%;
-            margin-bottom: 1vh;
+            margin: 0 0 1vh 0;
             -webkit-box-shadow: 0 0 10px @red;
-            box-shadow: 0 0 10px @red;          
+            box-shadow: 0 0 10px @red;
           }
         }
       }
-      .c2text{
+      .c2text {
         .ctext();
-        margin-left:0;
-        margin-right:2vw;
-        @media @tablet{
+        margin-left: 0;
+        margin-right: 2vw;
+        @media @tablet {
           .displayflex(column, space-between, center);
-          width:80vw;
+          width: 80vw;
           height: 38vh;
-          font-size:1.6rem;
-          margin-right:0;
+          font-size: 1.6rem;
+          margin-right: 0;
         }
         @media @phone {
           width: 80vw;
-          height:46vh;
+          height: 46vh;
           -webkit-box-shadow: 0 0 10px @teal;
           box-shadow: 0 0 10px @teal;
         }
 
-        
-        h3{
+        h3 {
           .h3text();
-          @media @tablet{
+          @media @tablet {
             width: 20vw;
-            
-            margin-top:2rem;
-            
+
+            margin-top: 2rem;
           }
-          @media @phone{
-            width:40vw;
-            
+          @media @phone {
+            content: ""; /* This is necessary for the pseudo element to work. */
+          display: block; /* This will put the pseudo element on its own line. */
+          margin: 0 auto; /* This will center the border. */
+          width: 20vw; /* Change this to whatever width you want. */
+          margin: 1vh 0 3vh 0;
+          border-bottom: 2px solid @red; /* This creates the border. Replace black with whatever color you want. */
           }
         }
-        p{
+        p {
           .cptext();
         }
-        a{
+        a {
           .btnstyle();
-          margin-bottom:2rem;
-          margin-right:0;
-          @media @tablet{
-            margin-top:0;
-            margin-bottom:0;
+          margin-bottom: 2rem;
+          margin-right: 0;
+          @media @tablet {
+            margin-top: 0;
+            margin-bottom: 0;
           }
-          @media @phone{
-            margin-bottom:5rem;
+          @media @phone {
+            margin-bottom: 5rem;
           }
         }
         a:hover {
@@ -245,7 +252,6 @@ body {
           box-shadow: 0 0 10px @teal;
         }
       }
-
     } // this ends the styling for the second campaign card
 
     .campaign3 {
@@ -253,6 +259,7 @@ body {
       .campaignstyle();
       @media @tablet {
         .displayflex(column);
+        margin-bottom: 4vh;
       }
       @media @phone {
         .displayflex(column);
@@ -267,8 +274,7 @@ body {
           }
           @media @phone {
             width: 80vw;
-            margin-left: 1.5%;
-            margin-bottom: 1vh;
+            margin: 0 0 1vh 0;
             -webkit-box-shadow: 0 0 10px @red;
             box-shadow: 0 0 10px @red;
           }
@@ -282,7 +288,7 @@ body {
           width: 80vw;
           height: 38vh;
           font-size: 1.6rem;
-          margin-left:0;
+          margin-left: 0;
         }
         @media @phone {
           width: 80vw;
@@ -301,8 +307,12 @@ body {
           }
 
           @media @phone {
-            width: 40vw;
-            
+            content: ""; /* This is necessary for the pseudo element to work. */
+          display: block; /* This will put the pseudo element on its own line. */
+          margin: 0 auto; /* This will center the border. */
+          width: 30vw; /* Change this to whatever width you want. */
+          margin: 1vh 0 2vh 0;
+          border-bottom: 2px solid @red; /* This creates the border. Replace black with whatever color you want. */
           }
         }
         p {
@@ -340,7 +350,9 @@ body {
       font-size: 1.8rem;
       @media @tablet {
         width: 40vw;
-        margin-left: 23rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 2vh;
       }
       @media @phone {
         width: 50vw;

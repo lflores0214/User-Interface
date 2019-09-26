@@ -245,6 +245,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(123, 121, 121, 0.7);
+}
+@media (max-width:500px) {
+  .lpHeader {
+    background-color: white;
+  }
 }
 .lpHeader nav {
   width: 20vw;
@@ -435,6 +441,7 @@ body .campaigns .campaign1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4vh;
   }
 }
 @media (max-width:500px) {
@@ -456,13 +463,13 @@ body .campaigns .campaign1 .c1img img {
 @media (max-width: 800px) {
   body .campaigns .campaign1 .c1img img {
     width: 80vw;
+    margin: 0 0 0 0;
   }
 }
 @media (max-width:500px) {
   body .campaigns .campaign1 .c1img img {
     width: 80vw;
-    margin-left: 1.5%;
-    margin-bottom: 1vh;
+    margin: 0 0 1vh 0;
     -webkit-box-shadow: 0 0 10px #f1173a;
     box-shadow: 0 0 10px #f1173a;
   }
@@ -485,7 +492,7 @@ body .campaigns .campaign1 .c1text {
     height: 38vh;
     width: 80vw;
     font-size: 1.6rem;
-    margin-left: 0;
+    margin: 0 0 0 0;
   }
 }
 @media (max-width:500px) {
@@ -498,6 +505,7 @@ body .campaigns .campaign1 .c1text {
     height: 50vh;
     -webkit-box-shadow: 0 0 10px #17f1ce;
     box-shadow: 0 0 10px #17f1ce;
+    margin: 0 0 0 0;
   }
 }
 body .campaigns .campaign1 .c1text h3 {
@@ -525,7 +533,18 @@ body .campaigns .campaign1 .c1text h3 {
 }
 @media (max-width:500px) {
   body .campaigns .campaign1 .c1text h3 {
-    width: 40vw;
+    text-align: center;
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 45%;
+    /* Change this to whatever width you want. */
+    margin-top: 1vh;
+    border-bottom: 2px solid #f1173a;
+    /* This creates the border. Replace black with whatever color you want. */
   }
 }
 body .campaigns .campaign1 .c1text p {
@@ -572,6 +591,7 @@ body .campaigns .campaign2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4vh;
   }
 }
 @media (max-width:500px) {
@@ -598,8 +618,7 @@ body .campaigns .campaign2 .c2img img {
 @media (max-width:500px) {
   body .campaigns .campaign2 .c2img img {
     width: 80vw;
-    margin-left: 1.5%;
-    margin-bottom: 1vh;
+    margin: 0 0 1vh 0;
     -webkit-box-shadow: 0 0 10px #f1173a;
     box-shadow: 0 0 10px #f1173a;
   }
@@ -660,7 +679,17 @@ body .campaigns .campaign2 .c2text h3 {
 }
 @media (max-width:500px) {
   body .campaigns .campaign2 .c2text h3 {
-    width: 40vw;
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 20vw;
+    /* Change this to whatever width you want. */
+    margin: 1vh 0 3vh 0;
+    border-bottom: 2px solid #f1173a;
+    /* This creates the border. Replace black with whatever color you want. */
   }
 }
 body .campaigns .campaign2 .c2text p {
@@ -714,6 +743,7 @@ body .campaigns .campaign3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4vh;
   }
 }
 @media (max-width:500px) {
@@ -740,8 +770,7 @@ body .campaigns .campaign3 .c3img img {
 @media (max-width:500px) {
   body .campaigns .campaign3 .c3img img {
     width: 80vw;
-    margin-left: 1.5%;
-    margin-bottom: 1vh;
+    margin: 0 0 1vh 0;
     -webkit-box-shadow: 0 0 10px #f1173a;
     box-shadow: 0 0 10px #f1173a;
   }
@@ -802,7 +831,17 @@ body .campaigns .campaign3 .c3text h3 {
 }
 @media (max-width:500px) {
   body .campaigns .campaign3 .c3text h3 {
-    width: 40vw;
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 30vw;
+    /* Change this to whatever width you want. */
+    margin: 1vh 0 2vh 0;
+    border-bottom: 2px solid #f1173a;
+    /* This creates the border. Replace black with whatever color you want. */
   }
 }
 body .campaigns .campaign3 .c3text p {
@@ -856,7 +895,9 @@ body footer nav {
 @media (max-width: 800px) {
   body footer nav {
     width: 40vw;
-    margin-left: 23rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2vh;
   }
 }
 @media (max-width:500px) {
@@ -967,11 +1008,8 @@ body footer nav:hover {
     border-bottom: 2px solid #8ff8e7;
   }
 }
-#section-a {
-  background: #fff;
-}
 #section-a h2 {
-  font-size: 2.3rem;
+  font-size: 3rem;
   text-align: center;
 }
 #section-a .bottom-line {
@@ -979,7 +1017,7 @@ body footer nav:hover {
   width: 10rem;
   background: red;
   display: block;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 2.6rem auto;
 }
 #section-a .members {
   display: flex;
@@ -992,6 +1030,11 @@ body footer nav:hover {
   #section-a .members {
     flex-direction: column;
     flex-wrap: nowrap;
+  }
+}
+@media (max-width: 800px) {
+  #section-a .members {
+    justify-content: space-evenly;
   }
 }
 #section-a .members .member {
@@ -1009,13 +1052,13 @@ body footer nav:hover {
   }
 }
 #section-a .members .member h2 {
-  font-size: 2rem;
-  font-family: "Noto Serif", serif;
+  font-size: 2.5rem;
+  font-family: 'Noto Serif', serif;
   text-align: center;
 }
 #section-a .members .member p {
-  font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   padding: 0 1.5rem;
   font-weight: bold;
@@ -1023,12 +1066,21 @@ body footer nav:hover {
 @media (max-width: 800px) {
   #section-a .members .member p {
     padding: 0rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 @media (max-width:500px) {
   #section-a .members .member p {
     padding: 0 2rem;
+  }
+}
+#section-a .members .member .role {
+  font-size: 2.2rem;
+  color: #17f1ce;
+}
+@media (max-width: 800px) {
+  #section-a .members .member .role {
+    font-size: 2.5rem;
   }
 }
 #section-a .members .member .team-image {
