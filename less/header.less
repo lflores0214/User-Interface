@@ -1,5 +1,9 @@
-.lpHeader{
+.lpHeader {
   .displayflex(column);
+  background-color: rgba(123, 121, 121, 0.7);
+  @media @phone {
+    background-color: white;
+  }
 
   nav {
     width: 20vw;
@@ -10,9 +14,9 @@
     border-bottom: 2px solid white;
     font-family: "Noto", serif;
     font-size: 1.8rem;
-    
-@media @tablet{
-      width:40vw;
+
+    @media @tablet {
+      width: 40vw;
     }
     @media @phone {
       .displayflex(column);
@@ -20,7 +24,6 @@
       width: 80vw;
       border-bottom: 2px solid @mint;
     }
-    
 
     a {
       text-decoration: none;

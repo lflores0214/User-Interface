@@ -96,8 +96,9 @@ body {
         .displayflex(column);
       }
       @media @phone {
-        .displayflex(column);
+        .displayflex(column, center, center);
         margin-bottom: 4vh;
+        
       }
 
       .c1img {
@@ -108,10 +109,11 @@ body {
           }
           @media @phone {
             width: 80vw;
-            margin-left: 1.5%;
-            margin-bottom: 1vh;
+            margin:0 0 1vh 0;
             -webkit-box-shadow: 0 0 10px @red;
             box-shadow: 0 0 10px @red;
+           
+            
           }
         }
       }
@@ -123,7 +125,7 @@ body {
           height: 38vh;
           width: 80vw;
           font-size: 1.6rem;
-          margin-left:0;
+          
         }
         
         @media @phone {
@@ -132,6 +134,7 @@ body {
           height: 50vh;
           -webkit-box-shadow: 0 0 10px @teal;
           box-shadow: 0 0 10px @teal;
+          margin:0 0 0 0;
         }
 
         h3 {
@@ -188,8 +191,7 @@ body {
           }
           @media @phone{
             width: 80vw;
-            margin-left:1.5%;
-            margin-bottom: 1vh;
+            margin:0 0 1vh 0;
             -webkit-box-shadow: 0 0 10px @red;
             box-shadow: 0 0 10px @red;          
           }
@@ -270,8 +272,7 @@ body {
           }
           @media @phone {
             width: 80vw;
-            margin-left: 1.5%;
-            margin-bottom: 1vh;
+            margin:0 0 1vh 0;
             -webkit-box-shadow: 0 0 10px @red;
             box-shadow: 0 0 10px @red;
           }
@@ -343,7 +344,9 @@ body {
       font-size: 1.8rem;
       @media @tablet {
         width: 40vw;
-        margin-left: 23rem;
+        text-align: center;
+        margin:0 auto;
+        margin-bottom:2vh;
       }
       @media @phone {
         width: 50vw;
