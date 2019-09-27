@@ -190,14 +190,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Noto', serif;
+  font-family: "Noto", serif;
 }
 h1 {
   font-size: 4rem;
@@ -371,6 +371,16 @@ body .main-content .intro {
     box-shadow: 0 0 10px #17f1ce;
   }
 }
+@media (max-width: 330px) {
+  body .main-content .intro {
+    height: 100vh;
+  }
+}
+@media (max-width: 360px) {
+  body .main-content .intro h1 {
+    font-size: 2.8rem;
+  }
+}
 @media (max-width:500px) {
   body .main-content .intro h1:after {
     content: "";
@@ -506,6 +516,26 @@ body .campaigns .campaign1 .c1text {
     -webkit-box-shadow: 0 0 10px #17f1ce;
     box-shadow: 0 0 10px #17f1ce;
     margin: 0 0 0 0;
+  }
+}
+@media (max-width: 450px) {
+  body .campaigns .campaign1 .c1text {
+    height: 50vh;
+  }
+}
+@media (max-width: 390px) {
+  body .campaigns .campaign1 .c1text {
+    height: 60vh;
+  }
+}
+@media (max-width: 360px) {
+  body .campaigns .campaign1 .c1text {
+    height: 60vh;
+  }
+}
+@media (max-width: 330px) {
+  body .campaigns .campaign1 .c1text {
+    height: 70vh;
   }
 }
 body .campaigns .campaign1 .c1text h3 {
@@ -652,6 +682,26 @@ body .campaigns .campaign2 .c2text {
     height: 46vh;
     -webkit-box-shadow: 0 0 10px #17f1ce;
     box-shadow: 0 0 10px #17f1ce;
+  }
+}
+@media (max-width: 450px) {
+  body .campaigns .campaign2 .c2text {
+    height: 50vh;
+  }
+}
+@media (max-width: 390px) {
+  body .campaigns .campaign2 .c2text {
+    height: 60vh;
+  }
+}
+@media (max-width: 360px) {
+  body .campaigns .campaign2 .c2text {
+    height: 60vh;
+  }
+}
+@media (max-width: 330px) {
+  body .campaigns .campaign2 .c2text {
+    height: 70vh;
   }
 }
 body .campaigns .campaign2 .c2text h3 {
@@ -805,6 +855,21 @@ body .campaigns .campaign3 .c3text {
     margin-left: 0;
   }
 }
+@media (max-width: 390px) {
+  body .campaigns .campaign3 .c3text {
+    height: 60vh;
+  }
+}
+@media (max-width: 360px) {
+  body .campaigns .campaign3 .c3text {
+    height: 60vh;
+  }
+}
+@media (max-width: 330px) {
+  body .campaigns .campaign3 .c3text {
+    height: 70vh;
+  }
+}
 body .campaigns .campaign3 .c3text h3 {
   display: flex;
   justify-content: center;
@@ -906,6 +971,17 @@ body footer nav {
     margin: 1vh 0vw 1vh 25vw;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
+  }
+}
+@media (max-width: 330px) {
+  body footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    margin: 0 auto;
+    margin-bottom: 2vh;
   }
 }
 body footer nav a {
@@ -1053,12 +1129,12 @@ body footer nav:hover {
 }
 #section-a .members .member h2 {
   font-size: 2.5rem;
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
   text-align: center;
 }
 #section-a .members .member p {
   font-size: 1.4rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   padding: 0 1.5rem;
   font-weight: bold;
